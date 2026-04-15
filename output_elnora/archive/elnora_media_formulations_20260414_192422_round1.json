@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1",
+    "name": "Elnora-NBx-Fe-Boost",
+    "base_medium": "Media 1 (NBxCyclone, pH 6.4)",
+    "base_medium_volume_uL": 177,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 8,
+        "final_concentration": "42.1 mM"
+      },
+      {
+        "name": "Iron(II) Sulfate Heptahydrate",
+        "stock_concentration": "1 mM",
+        "volume_uL": 5,
+        "final_concentration": "0.026 mM"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Elnora-LBv2-Ca-Rich",
+    "base_medium": "Media 2 (LBv2, pH 7.0)",
+    "base_medium_volume_uL": 170,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.6 mM"
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Elnora-LBv2-Osmotic-Glutamate",
+    "base_medium": "Media 2 (LBv2, pH 7.0)",
+    "base_medium_volume_uL": 172,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 8,
+        "final_concentration": "42.1 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 5,
+        "final_concentration": "26.3 mM"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Elnora-SemiDef-Carbon-Boost",
+    "base_medium": "Media 4 (Semi-Defined, pH 7.0)",
+    "base_medium_volume_uL": 175,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10%",
+        "volume_uL": 5,
+        "final_concentration": "0.26%"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mg/mL"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 5,
+        "final_concentration": "26.3 mM"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Elnora-HighBuff-Citrate",
+    "base_medium": "Media 5 (High Buffer Defined, pH 7.0)",
+    "base_medium_volume_uL": 180,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Sodium Citrate",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Elnora-NBx-K-Boost",
+    "base_medium": "Media 1 (NBxCyclone, pH 6.4)",
+    "base_medium_volume_uL": 177,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 8,
+        "final_concentration": "42.1 mM"
+      },
+      {
+        "name": "KCl",
+        "stock_concentration": "200 mM",
+        "volume_uL": 5,
+        "final_concentration": "5.26 mM"
+      }
+    ]
+  }
+]

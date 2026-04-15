@@ -1,0 +1,164 @@
+[
+  {
+    "condition_id": "E-F1-R1",
+    "name": "Elnora-LBv2-Glc-Mg",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 3.8,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "MgSO4",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F2-R1",
+    "name": "Elnora-LBv2-Ca-Gly",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 3.5,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10%",
+        "volume_uL": 10,
+        "final_concentration": "0.53%"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F3-R1",
+    "name": "Elnora-NBx-Fe-Citrate",
+    "base_medium": "Media 1 (NBxCyclone)",
+    "base_medium_volume_uL": 170,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 4.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Iron(II) Sulfate Heptahydrate",
+        "stock_concentration": "1 mM",
+        "volume_uL": 5,
+        "final_concentration": "0.026 mM"
+      },
+      {
+        "name": "Sodium Citrate",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F4-R1",
+    "name": "Elnora-NBx-Glutamate",
+    "base_medium": "Media 1 (NBxCyclone)",
+    "base_medium_volume_uL": 175,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 3.9,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 5,
+        "final_concentration": "26.32 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F5-R1",
+    "name": "Elnora-SemiDef-Rich-Boost",
+    "base_medium": "Media 4 (Semi-Defined)",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 2.8,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 5,
+        "final_concentration": "26.32 mM"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F6-R1",
+    "name": "Elnora-LBv2-High-Osmolarity",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 170,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 3.4,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": "5 M",
+        "volume_uL": 5,
+        "final_concentration": "131.58 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10%",
+        "volume_uL": 5,
+        "final_concentration": "0.26%"
+      }
+    ]
+  }
+]

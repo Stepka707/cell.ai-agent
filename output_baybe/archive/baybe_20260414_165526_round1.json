@@ -1,0 +1,194 @@
+[
+  {
+    "id": "F1",
+    "name": "Baybe-Defined-Yeastextract-K2HPO4-MOPS-Tryptone",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 150.1,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": null,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 15.7,
+        "final_concentration": "7.85 mg/mL"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 8.1,
+        "final_concentration": "2.02 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 11.1,
+        "final_concentration": "55.50 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5.0,
+        "final_concentration": "2.50 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "Baybe-Defined-Minimal-Yeastextract-K2HPO4-NH42SO4",
+    "base_medium": "Defined-Minimal Media",
+    "base_medium_volume_uL": 146.6,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": null,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 25.9,
+        "final_concentration": "12.95 mg/mL"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 8.0,
+        "final_concentration": "2.00 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 9.5,
+        "final_concentration": "47.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "Baybe-SDef-Yeastextract-NH42SO4-Tryptone",
+    "base_medium": "Semi-Defined Media",
+    "base_medium_volume_uL": 143.3,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": null,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 22.0,
+        "final_concentration": "11.00 mg/mL"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 12.1,
+        "final_concentration": "60.50 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 12.6,
+        "final_concentration": "6.30 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "Baybe-HBD-Yeastextract-K2HPO4-NH42SO4-Tryptone",
+    "base_medium": "High Buffer Defined Media",
+    "base_medium_volume_uL": 149.4,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": null,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.7,
+        "final_concentration": "4.85 mg/mL"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 8.3,
+        "final_concentration": "2.08 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 13.2,
+        "final_concentration": "66.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.4,
+        "final_concentration": "4.70 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "Baybe-LBv2-Yeastextract-K2HPO4-NH42SO4",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 147.6,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": null,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 17.5,
+        "final_concentration": "8.75 mg/mL"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 12.0,
+        "final_concentration": "3.00 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 12.9,
+        "final_concentration": "64.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Baybe-Novel-Yeastextract-K2HPO4-NH42SO4-NaLglut-Tryptone",
+    "base_medium": "Novel Bio NBxCyclone Media",
+    "base_medium_volume_uL": 138.2,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": null,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.1,
+        "final_concentration": "4.55 mg/mL"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 20.0,
+        "final_concentration": "5.00 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 6.9,
+        "final_concentration": "34.50 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 6.5,
+        "final_concentration": "32.50 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.3,
+        "final_concentration": "4.65 mg/mL"
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "condition_id": "F1-R2",
+    "name": "Baybe-Defined-MgSO4-K2HPO4-MOPS",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 146.9,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 6.9542,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5.3,
+        "final_concentration": "2.65 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 15.8,
+        "final_concentration": "3.95 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 22.0,
+        "final_concentration": "110.00 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F2-R2",
+    "name": "Baybe-Defined-MgSO4-K2HPO4-MOPS",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 149.0,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.9413,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 8.7,
+        "final_concentration": "4.35 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 10.9,
+        "final_concentration": "2.73 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 21.4,
+        "final_concentration": "107.00 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F3-R2",
+    "name": "Baybe-Defined-MgSO4-K2HPO4-MOPS",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 156.5,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.502,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5.1,
+        "final_concentration": "2.55 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 14.7,
+        "final_concentration": "3.67 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 13.7,
+        "final_concentration": "68.50 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F4-R2",
+    "name": "Baybe-Defined-MgSO4-K2HPO4-MOPS",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 139.9,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.4388,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 8.1,
+        "final_concentration": "4.05 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 22.0,
+        "final_concentration": "5.50 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 20.0,
+        "final_concentration": "100.00 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F5-R2",
+    "name": "Baybe-Defined-MgSO4-K2HPO4-MOPS",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 136.9,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.4221,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 6.2,
+        "final_concentration": "3.10 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 17.0,
+        "final_concentration": "4.25 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 29.9,
+        "final_concentration": "149.50 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F6-R2",
+    "name": "Baybe-Defined-K2HPO4-MOPS",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 160.1,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2214,
+    "components": [
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 6.0,
+        "final_concentration": "1.50 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 23.9,
+        "final_concentration": "119.50 mM"
+      }
+    ]
+  }
+]

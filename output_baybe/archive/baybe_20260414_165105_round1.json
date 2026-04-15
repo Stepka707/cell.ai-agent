@@ -1,0 +1,212 @@
+[
+  {
+    "id": "F1",
+    "name": "Baybe-DGly-NaLglut-Tryptone",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 173.7,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 11.2,
+        "final_concentration": "56.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5.1,
+        "final_concentration": "2.55 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "Baybe-DMin-Yeastextract-MgSO4-K2HPO4-MOPS-NaLglut",
+    "base_medium": "Defined-Minimal Media",
+    "base_medium_volume_uL": 142.8,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 12.2,
+        "final_concentration": "6.10 mg/mL"
+      },
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 6.5,
+        "final_concentration": "3.25 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 5.0,
+        "final_concentration": "1.25 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 9.9,
+        "final_concentration": "49.50 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 13.6,
+        "final_concentration": "68.00 mM"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "Baybe-SDef-MgSO4-K2HPO4-MOPS-Tryptone",
+    "base_medium": "Semi-Defined Media",
+    "base_medium_volume_uL": 147.0,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5.7,
+        "final_concentration": "2.85 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 23.9,
+        "final_concentration": "5.97 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 6.6,
+        "final_concentration": "33.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 6.8,
+        "final_concentration": "3.40 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "Baybe-HBD-MgSO4-K2HPO4-NH42SO4",
+    "base_medium": "High Buffer Defined Media",
+    "base_medium_volume_uL": 155.9,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 7.1,
+        "final_concentration": "3.55 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 19.0,
+        "final_concentration": "4.75 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 8.0,
+        "final_concentration": "40.00 mM"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "Baybe-LBv2-Yeastextract-MgSO4-K2HPO4-NH42SO4-MOPS-NaLglut",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 140.8,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5.0,
+        "final_concentration": "2.50 mg/mL"
+      },
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 7.4,
+        "final_concentration": "3.70 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 5.4,
+        "final_concentration": "1.35 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 12.9,
+        "final_concentration": "64.50 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 13.0,
+        "final_concentration": "65.00 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 5.5,
+        "final_concentration": "27.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Baybe-NBx-MgSO4-K2HPO4-NH42SO4-MOPS-NaLglut-Tryptone",
+    "base_medium": "Novel Bio NBxCyclone Media",
+    "base_medium_volume_uL": 132.6,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "MgSO₄",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5.4,
+        "final_concentration": "2.70 mM"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 8.3,
+        "final_concentration": "2.08 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 11.6,
+        "final_concentration": "58.00 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 8.2,
+        "final_concentration": "41.00 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 8.2,
+        "final_concentration": "41.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 15.7,
+        "final_concentration": "7.85 mg/mL"
+      }
+    ]
+  }
+]

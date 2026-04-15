@@ -1,0 +1,188 @@
+[
+  {
+    "condition_id": "F1-R2",
+    "name": "Baybe-Defined-K2HPO4-NH42SO4-MOPS-Tryptone",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 146.0,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 11.7,
+        "final_concentration": "2.92 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 9.3,
+        "final_concentration": "46.50 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 11.6,
+        "final_concentration": "58.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 11.4,
+        "final_concentration": "5.70 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "F2-R2",
+    "name": "Baybe-Defined-K2HPO4-MOPS-Tryptone",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 152.4,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 11.4,
+        "final_concentration": "2.85 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 12.6,
+        "final_concentration": "63.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 13.6,
+        "final_concentration": "6.80 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "F3-R2",
+    "name": "Baybe-Defined-NH42SO4-MOPS-Tryptone",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 151.7,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 10.2,
+        "final_concentration": "51.00 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 12.9,
+        "final_concentration": "64.50 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 15.2,
+        "final_concentration": "7.60 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "F4-R2",
+    "name": "Baybe-Defined-K2HPO4-NH42SO4-MOPS-Tryptone",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 144.7,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 18.4,
+        "final_concentration": "4.60 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 8.8,
+        "final_concentration": "44.00 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 10.4,
+        "final_concentration": "52.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 7.7,
+        "final_concentration": "3.85 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "F5-R2",
+    "name": "Baybe-Defined-K2HPO4-NH42SO4-MOPS-Tryptone",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 133.8,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 15.6,
+        "final_concentration": "3.90 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 7.8,
+        "final_concentration": "39.00 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 12.0,
+        "final_concentration": "60.00 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 20.8,
+        "final_concentration": "10.40 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "F6-R2",
+    "name": "Baybe-Defined-K2HPO4-NH42SO4-MOPS",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 164.5,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 7.6,
+        "final_concentration": "1.90 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 5.9,
+        "final_concentration": "29.50 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 12.0,
+        "final_concentration": "60.00 mM"
+      }
+    ]
+  }
+]

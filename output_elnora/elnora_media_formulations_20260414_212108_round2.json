@@ -1,0 +1,182 @@
+[
+  {
+    "condition_id": "E-F1-R2",
+    "name": "Elnora-LBv2-Glc-Mg-YE",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 155,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 7.6,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "MgSO4",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mM"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F2-R2",
+    "name": "Elnora-SemiDef-Glc-Rich",
+    "base_medium": "Media 4 (Semi-Defined)",
+    "base_medium_volume_uL": 155,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 7.2,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 5,
+        "final_concentration": "26.32 mM"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F3-R2",
+    "name": "Elnora-LBv2-Glc-Ca",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 7.3,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.63 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F4-R2",
+    "name": "Elnora-NBx-Glc-Fe",
+    "base_medium": "Media 1 (NBxCyclone)",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 6.5,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Iron(II) Sulfate Heptahydrate",
+        "stock_concentration": "1 mM",
+        "volume_uL": 5,
+        "final_concentration": "0.026 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F5-R2",
+    "name": "Elnora-HighBuf-Rich",
+    "base_medium": "Media 5 (High Buffer Defined)",
+    "base_medium_volume_uL": 160,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 7.1,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F6-R2",
+    "name": "Elnora-LBv2-Glc-KCl",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 160,
+    "total_volume_uL": 190,
+    "predicted_growth_rate_per_hr": 7.4,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "KCl",
+        "stock_concentration": "200 mM",
+        "volume_uL": 10,
+        "final_concentration": "10.53 mM"
+      }
+    ]
+  }
+]

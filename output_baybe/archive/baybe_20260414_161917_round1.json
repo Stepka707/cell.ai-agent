@@ -1,0 +1,200 @@
+[
+  {
+    "id": "F1",
+    "name": "Baybe-DGly-Yeastextract-NaLglut-Tracemetals-K2HPO4",
+    "base_medium": "Defined Glycerol Media",
+    "base_medium_volume_uL": 141.8,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 8.2,
+        "final_concentration": "4.10 mg/mL"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 13.1,
+        "final_concentration": "65.50 mM"
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": "10x",
+        "volume_uL": 15.7,
+        "final_concentration": "0.79x"
+      },
+      {
+        "name": "K2HPO4",
+        "stock_concentration": "50 mM",
+        "volume_uL": 11.2,
+        "final_concentration": "2.80 mM"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "Baybe-DMin-MgSO4-Tryptone-NaLglut-Tracemetals-NaCl",
+    "base_medium": "Defined-Minimal Media",
+    "base_medium_volume_uL": 139.7,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "MgSO4",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5.2,
+        "final_concentration": "2.60 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 13.2,
+        "final_concentration": "6.60 mg/mL"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.0,
+        "final_concentration": "50.00 mM"
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": "10x",
+        "volume_uL": 9.2,
+        "final_concentration": "0.46x"
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": "5 M",
+        "volume_uL": 12.7,
+        "final_concentration": "317.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "Baybe-SDef-NaLglut-Tracemetals-NaCl-K2HPO4",
+    "base_medium": "Semi-Defined Media",
+    "base_medium_volume_uL": 144.0,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 8.8,
+        "final_concentration": "44.00 mM"
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": "10x",
+        "volume_uL": 7.5,
+        "final_concentration": "0.38x"
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": "5 M",
+        "volume_uL": 24.7,
+        "final_concentration": "617.50 mM"
+      },
+      {
+        "name": "K2HPO4",
+        "stock_concentration": "50 mM",
+        "volume_uL": 5.0,
+        "final_concentration": "1.25 mM"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "Baybe-HBD-Tryptone-NaCl",
+    "base_medium": "High Buffer Defined Media",
+    "base_medium_volume_uL": 152.6,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 13.2,
+        "final_concentration": "6.60 mg/mL"
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": "5 M",
+        "volume_uL": 24.2,
+        "final_concentration": "605.00 mM"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "Baybe-LBv2-MgSO4-NaLglut-Tracemetals-NaCl-K2HPO4",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 139.7,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "MgSO4",
+        "stock_concentration": "100 mM",
+        "volume_uL": 8.5,
+        "final_concentration": "4.25 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 6.7,
+        "final_concentration": "33.50 mM"
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": "10x",
+        "volume_uL": 11.8,
+        "final_concentration": "0.59x"
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": "5 M",
+        "volume_uL": 6.3,
+        "final_concentration": "157.50 mM"
+      },
+      {
+        "name": "K2HPO4",
+        "stock_concentration": "50 mM",
+        "volume_uL": 17.0,
+        "final_concentration": "4.25 mM"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Baybe-NBx-Tryptone-NaLglut-Tracemetals-NaCl",
+    "base_medium": "Novel Bio NBxCyclone Media",
+    "base_medium_volume_uL": 135.7,
+    "total_volume_uL": 200,
+    "components": [
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 20.6,
+        "final_concentration": "10.30 mg/mL"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.2,
+        "final_concentration": "51.00 mM"
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": "10x",
+        "volume_uL": 11.3,
+        "final_concentration": "0.56x"
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": "5 M",
+        "volume_uL": 12.2,
+        "final_concentration": "305.00 mM"
+      }
+    ]
+  }
+]

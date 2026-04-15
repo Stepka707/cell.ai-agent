@@ -1,0 +1,7 @@
+condition,base_media,base_media_vol,Yeast_extract,MgSO4,K2HPO4,NH4_2SO4,MOPS,Na_L_glut,Tryptone,cells,total,predicted_growth_rate_per_hr
+R2-1,Prepared LBv2 Media,172.4,10.3,0.0,0.0,0.0,7.3,0.0,0.0,10.0,200,7.2834
+R2-2,Prepared LBv2 Media,170.7,9.1,0.0,0.0,0.0,10.2,0.0,0.0,10.0,200,6.4762
+R2-3,Novel Bio NBxCyclone Media,177.7,0.0,0.0,0.0,0.0,0.0,0.0,12.3,10.0,200,5.3789
+R2-4,Prepared LBv2 Media,159.9,14.8,0.0,0.0,0.0,15.3,0.0,0.0,10.0,200,5.2142
+R2-5,Prepared LBv2 Media,182.4,0.0,0.0,0.0,0.0,7.6,0.0,0.0,10.0,200,5.2141
+R2-6,Prepared LBv2 Media,177.1,12.9,0.0,0.0,0.0,0.0,0.0,0.0,10.0,200,5.1655

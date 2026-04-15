@@ -1,0 +1,128 @@
+[
+  {
+    "id": "F1",
+    "name": "Baybe-LBv2-Yeastextract-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 172.1,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 7.4204,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.0,
+        "final_concentration": "5.00 mg/mL"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 7.9,
+        "final_concentration": "39.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "Baybe-LBv2-Yeastextract-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 171.4,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 6.642,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 8.1,
+        "final_concentration": "4.05 mg/mL"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 10.5,
+        "final_concentration": "52.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "Baybe-LBv2-Yeastextract",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 175.2,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2579,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 14.8,
+        "final_concentration": "7.40 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "Baybe-LBv2-Yeastextract-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 159.6,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 15.7,
+        "final_concentration": "7.85 mg/mL"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 14.7,
+        "final_concentration": "73.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "Baybe-LBv2-Yeastextract-K2HPO4-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 161.5,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.1,
+        "final_concentration": "5.05 mg/mL"
+      },
+      {
+        "name": "K₂HPO₄",
+        "stock_concentration": "50 mM",
+        "volume_uL": 9.9,
+        "final_concentration": "2.48 mM"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 8.5,
+        "final_concentration": "42.50 mM"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Baybe-LBv2-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 183.8,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2141,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 6.2,
+        "final_concentration": "31.00 mM"
+      }
+    ]
+  }
+]

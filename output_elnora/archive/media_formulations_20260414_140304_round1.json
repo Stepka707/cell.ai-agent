@@ -1,0 +1,158 @@
+[
+  {
+    "id": "F1",
+    "name": "Elnora-LBv2-Glucose",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 170.0,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.0,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.0,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "Elnora-LBv2-Glycerol-Ca",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 160.0,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.0,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10%",
+        "volume_uL": 10.0,
+        "final_concentration": "0.526%"
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": "100 mM",
+        "volume_uL": 10.0,
+        "final_concentration": "5.26 mM"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "Elnora-NBx-Iron-Glucose",
+    "base_medium": "Media 1 (NBxCyclone)",
+    "base_medium_volume_uL": 160.0,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.0,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Iron(II) Sulfate Heptahydrate",
+        "stock_concentration": "1 mM",
+        "volume_uL": 10.0,
+        "final_concentration": "0.0526 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.0,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "Elnora-NBx-Glycerol-Trace",
+    "base_medium": "Media 1 (NBxCyclone)",
+    "base_medium_volume_uL": 151.0,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.0,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10%",
+        "volume_uL": 10.0,
+        "final_concentration": "0.526%"
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": "10x",
+        "volume_uL": 19.0,
+        "final_concentration": "1x"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "Elnora-LBv2-SuperRich",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 160.0,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.0,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.0,
+        "final_concentration": "5.26 mg/mL"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.0,
+        "final_concentration": "5.26 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Elnora-LBv2-Citrate-Ammonium",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 165.0,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 10.0,
+        "final_concentration": "52.63 mM"
+      },
+      {
+        "name": "Sodium Citrate",
+        "stock_concentration": "100 mM",
+        "volume_uL": 10.0,
+        "final_concentration": "5.26 mM"
+      },
+      {
+        "name": "(NH4)2SO4",
+        "stock_concentration": "1 M",
+        "volume_uL": 5.0,
+        "final_concentration": "26.32 mM"
+      }
+    ]
+  }
+]

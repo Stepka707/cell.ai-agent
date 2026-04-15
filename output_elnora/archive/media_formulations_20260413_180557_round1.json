@@ -1,0 +1,164 @@
+[
+  {
+    "id": "F1",
+    "name": "Semi-Defined Enriched",
+    "base_medium": "Media 4",
+    "base_medium_volume_uL": 175,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5,
+        "final_concentration": "2.632 mg/mL"
+      },
+      {
+        "name": "Sodium_Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 5,
+        "final_concentration": "26.316 mM"
+      },
+      {
+        "name": "MOPS",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 5,
+        "final_concentration": "26.316 mM"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "High Buffer Defined + Citrate/Glutamate",
+    "base_medium": "Media 5",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Sodium_Citrate",
+        "stock_concentration": "100 mM",
+        "volume_uL": 10,
+        "final_concentration": "5.263 mM"
+      },
+      {
+        "name": "Sodium_Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 10,
+        "final_concentration": "52.632 mM"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 5,
+        "final_concentration": "2.632 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "LBv2 + MOPS/Ca/Glc",
+    "base_medium": "Media 2",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 10,
+        "final_concentration": "52.632 mM"
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5,
+        "final_concentration": "2.632 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.263 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "NBxCyclone + MOPS/Fe/Gly",
+    "base_medium": "Media 1",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 10,
+        "final_concentration": "52.632 mM"
+      },
+      {
+        "name": "FeSO4",
+        "stock_concentration": "1 mM",
+        "volume_uL": 5,
+        "final_concentration": "0.026 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10 %",
+        "volume_uL": 10,
+        "final_concentration": "0.526 %"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "Defined Minimal + Organics/NaCl",
+    "base_medium": "Media 3",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.263 mg/mL"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10,
+        "final_concentration": "5.263 mg/mL"
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": "5000 mM",
+        "volume_uL": 5,
+        "final_concentration": "131.579 mM"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Defined Glycerol + Glu/KCl",
+    "base_medium": "Media 6",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Sodium_Glutamate",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 10,
+        "final_concentration": "52.632 mM"
+      },
+      {
+        "name": "KCl",
+        "stock_concentration": "200 mM",
+        "volume_uL": 10,
+        "final_concentration": "10.526 mM"
+      },
+      {
+        "name": "Trace_metals",
+        "stock_concentration": "10 ×",
+        "volume_uL": 5,
+        "final_concentration": "0.263 ×"
+      }
+    ]
+  }
+]

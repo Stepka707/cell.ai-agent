@@ -1,0 +1,188 @@
+[
+  {
+    "id": "F1",
+    "name": "Enhanced Semi-Defined",
+    "base_medium": "Semi-Defined",
+    "base_medium_volume_uL": 175,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Glucose",
+        "stock_concentration": 100,
+        "volume_uL": 5,
+        "final_concentration": 2.6316
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": 1000,
+        "volume_uL": 5,
+        "final_concentration": 26.3158
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": 10,
+        "volume_uL": 5,
+        "final_concentration": 0.2632
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "Buffered LBv2 with Carbon/Nitrogen",
+    "base_medium": "LBv2",
+    "base_medium_volume_uL": 160,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": 1000,
+        "volume_uL": 10,
+        "final_concentration": 52.6316
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": 100,
+        "volume_uL": 5,
+        "final_concentration": 2.6316
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": 1000,
+        "volume_uL": 10,
+        "final_concentration": 52.6316
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": 100,
+        "volume_uL": 5,
+        "final_concentration": 2.6316
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "Buffered NBxCyclone with Iron",
+    "base_medium": "NBxCyclone",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": 1000,
+        "volume_uL": 10,
+        "final_concentration": 52.6316
+      },
+      {
+        "name": "FeSO4",
+        "stock_concentration": 1,
+        "volume_uL": 5,
+        "final_concentration": 0.0263
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": 100,
+        "volume_uL": 5,
+        "final_concentration": 2.6316
+      },
+      {
+        "name": "Trace metals",
+        "stock_concentration": 10,
+        "volume_uL": 5,
+        "final_concentration": 0.2632
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "High Buffer Defined with Citrate/Glutamate",
+    "base_medium": "High Buffer Defined",
+    "base_medium_volume_uL": 165,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Sodium Citrate",
+        "stock_concentration": 100,
+        "volume_uL": 10,
+        "final_concentration": 5.2632
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": 1000,
+        "volume_uL": 10,
+        "final_concentration": 52.6316
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": 100,
+        "volume_uL": 5,
+        "final_concentration": 2.6316
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "High Salt Defined Minimal",
+    "base_medium": "Defined Minimal",
+    "base_medium_volume_uL": 160,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "(NH4)2SO4",
+        "stock_concentration": 1000,
+        "volume_uL": 5,
+        "final_concentration": 26.3158
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": 100,
+        "volume_uL": 10,
+        "final_concentration": 5.2632
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": 100,
+        "volume_uL": 10,
+        "final_concentration": 5.2632
+      },
+      {
+        "name": "NaCl",
+        "stock_concentration": 5000,
+        "volume_uL": 5,
+        "final_concentration": 131.5789
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "Enhanced Defined Glycerol",
+    "base_medium": "Defined Glycerol",
+    "base_medium_volume_uL": 155,
+    "total_volume_uL": 190,
+    "components": [
+      {
+        "name": "Glycerol",
+        "stock_concentration": 10,
+        "volume_uL": 10,
+        "final_concentration": 0.5263
+      },
+      {
+        "name": "KCl",
+        "stock_concentration": 200,
+        "volume_uL": 10,
+        "final_concentration": 10.5263
+      },
+      {
+        "name": "MgSO4",
+        "stock_concentration": 100,
+        "volume_uL": 5,
+        "final_concentration": 2.6316
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": 1000,
+        "volume_uL": 10,
+        "final_concentration": 52.6316
+      }
+    ]
+  }
+]

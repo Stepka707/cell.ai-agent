@@ -1,0 +1,164 @@
+[
+  {
+    "id": "F1",
+    "name": "LBv2-MOPS-Glc-Ca",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 165.3,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 9.5,
+        "final_concentration": "50 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": "100 mM",
+        "volume_uL": 5.7,
+        "final_concentration": "3 mM"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "name": "LBv2-MOPS-Gly-Glu",
+    "base_medium": "Media 2 (LBv2)",
+    "base_medium_volume_uL": 165.3,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 9.5,
+        "final_concentration": "50 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10% in sterile H2O",
+        "volume_uL": 9.5,
+        "final_concentration": "0.5%"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 5.7,
+        "final_concentration": "30 mM"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "name": "NBx-MOPS-Fe-Glc",
+    "base_medium": "Media 1 (NBxCyclone)",
+    "base_medium_volume_uL": 161.5,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 9.5,
+        "final_concentration": "50 mM"
+      },
+      {
+        "name": "Iron(II) Sulfate Heptahydrate",
+        "stock_concentration": "1 mM",
+        "volume_uL": 9.5,
+        "final_concentration": "0.05 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "name": "NBx-MOPS-Fe-Cit",
+    "base_medium": "Media 1 (NBxCyclone)",
+    "base_medium_volume_uL": 165.3,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 9.5,
+        "final_concentration": "50 mM"
+      },
+      {
+        "name": "Iron(II) Sulfate Heptahydrate",
+        "stock_concentration": "1 mM",
+        "volume_uL": 5.7,
+        "final_concentration": "0.03 mM"
+      },
+      {
+        "name": "Sodium Citrate",
+        "stock_concentration": "100 mM",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mM"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "name": "SemiDef-MOPS-YE-Tryp",
+    "base_medium": "Media 4 (Semi-Defined)",
+    "base_medium_volume_uL": 165.3,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 5.7,
+        "final_concentration": "30 mM"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "name": "SemiDef-MOPS-Gly-KCl",
+    "base_medium": "Media 4 (Semi-Defined)",
+    "base_medium_volume_uL": 165.3,
+    "total_volume_uL": 190.0,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 5.7,
+        "final_concentration": "30 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10% in sterile H2O",
+        "volume_uL": 9.5,
+        "final_concentration": "0.5%"
+      },
+      {
+        "name": "KCl",
+        "stock_concentration": "200 mM",
+        "volume_uL": 9.5,
+        "final_concentration": "10 mM"
+      }
+    ]
+  }
+]

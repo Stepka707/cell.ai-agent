@@ -1,0 +1,122 @@
+[
+  {
+    "condition_id": "F1-R2",
+    "name": "Baybe-LBv2-Yeastextract-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 172.1,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 7.417,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.8,
+        "final_concentration": "4.90 mg/mL"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 8.1,
+        "final_concentration": "40.50 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F2-R2",
+    "name": "Baybe-LBv2-Yeastextract",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 172.4,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.3369,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 17.6,
+        "final_concentration": "8.80 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "F3-R2",
+    "name": "Baybe-LBv2-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 178.5,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2325,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 11.5,
+        "final_concentration": "57.50 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F4-R2",
+    "name": "Baybe-LBv2-Yeastextract-MOPS-Tryptone",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 162.9,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2144,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.4,
+        "final_concentration": "5.20 mg/mL"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 6.5,
+        "final_concentration": "32.50 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 10.2,
+        "final_concentration": "5.10 mg/mL"
+      }
+    ]
+  },
+  {
+    "condition_id": "F5-R2",
+    "name": "Baybe-LBv2-Yeastextract-MOPS",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 159.6,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2142,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 14.2,
+        "final_concentration": "7.10 mg/mL"
+      },
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1000 mM",
+        "volume_uL": 16.2,
+        "final_concentration": "81.00 mM"
+      }
+    ]
+  },
+  {
+    "condition_id": "F6-R2",
+    "name": "Baybe-LBv2-Yeastextract",
+    "base_medium": "Prepared LBv2 Media",
+    "base_medium_volume_uL": 182.8,
+    "total_volume_uL": 200,
+    "predicted_growth_rate_per_hr": 5.2093,
+    "components": [
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 7.2,
+        "final_concentration": "3.60 mg/mL"
+      }
+    ]
+  }
+]

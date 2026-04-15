@@ -1,0 +1,7 @@
+condition,base_media,base_media_vol,Yeast_extract,MgSO4,K2HPO4,NH4_2SO4,MOPS,Na_L_glut,Tryptone,cells,total,predicted_growth_rate_per_hr
+R1-1,Defined Glycerol Media,138.2,24.7,5.5,5.7,8.3,0.0,7.6,0.0,10.0,200,
+R1-2,Defined-Minimal Media,137.2,11.7,7.1,7.2,0.0,8.3,8.7,9.8,10.0,200,
+R1-3,Semi-Defined Media,132.3,0.0,8.4,5.9,0.0,8.4,12.4,22.6,10.0,200,
+R1-4,High Buffer Defined Media,142.9,19.7,0.0,6.9,8.6,6.0,5.9,0.0,10.0,200,
+R1-5,Prepared LBv2 Media,133.4,0.0,0.0,28.0,0.0,5.0,10.3,13.3,10.0,200,
+R1-6,Novel Bio NBxCyclone Media,138.7,8.0,0.0,18.5,5.3,0.0,13.1,6.4,10.0,200,
