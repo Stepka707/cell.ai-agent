@@ -38,45 +38,27 @@ Ask for any missing values:
 - `new_tip: always` on all transfers
 - `blow_out: True` on all reagent/media transfers; `blow_out: False` on all cell transfers
 
-## CellAi_Reagent_Stocks_001 well map (fixed)
-
-```python
-REAGENT_PLATE_WELLS = {
-    # Stock components
-    "Tryptone":                        "A1",
-    "Yeast Extract":                   "A2",
-    "Glycerol":                        "A3",
-    "Glucose":                         "A4",
-    "NaCl":                            "A5",
-    "MgSO4":                           "A6",
-    "KCl":                             "B1",
-    "(NH4)2SO4":                       "B2",
-    "K2HPO4":                          "B3",
-    "KH2PO4":                          "B4",
-    "MOPS pH 7":                       "B5",
-    "MOPS":                            "B5",   # alias
-    "CaCl2":                           "B6",
-    "Trace metals":                    "C1",
-    "Trace_metals":                    "C1",   # alias
-    "Sodium Citrate":                  "C2",
-    "Sodium L-Glutamate":              "C3",
-    "Sodium_Glutamate":                "C3",   # alias
-    "Iron(II) Sulfate Heptahydrate":   "C4",
-    "FeSO4":                           "C4",   # alias
-    # Base media
-    "Novel Bio NBxCyclone Media":      "C5",
-    "Prepared LBv2 Media":             "C6",
-    "Sterile H2O":                     "D1",
-    "Defined-Minimal Media":           "D3",
-    "Semi-Defined Media":              "D4",
-    "High Buffer Defined Media":       "D5",
-    "Defined Glycerol Media":          "D6",
-}
-```
-
 ## Steps
 
-### 1. Read OD from prior run
+### 1. Read reagent plate well map from Monomer
+
+Call `mcp__monomer-cloud__get_plate_details` for `CellAi_Reagent_Stocks_001` to retrieve the current well contents. Build `REAGENT_PLATE_WELLS` dynamically from the response:
+
+```python
+# From the plate details, extract reagents_by_well:
+# {well: [{name: str, volume: str}, ...]}
+# Build a name→well lookup (primary reagent name per well):
+REAGENT_PLATE_WELLS = {}
+for well, reagents in plate_details["reagents_by_well"].items():
+    if reagents:
+        REAGENT_PLATE_WELLS[reagents[0]["name"]] = well
+```
+
+Stop and report if `CellAi_Reagent_Stocks_001` is not found or not checked in.
+
+After building the map, validate that every base medium and every stock component referenced in the formulation files has an entry in `REAGENT_PLATE_WELLS`. Report any missing reagents before proceeding.
+
+### 2. Read OD from prior run
 
 Call `mcp__monomer-cloud__get_plate_observations` (or equivalent) using `od_run_id` to retrieve the OD600 measurement. Extract the absorbance value at `od_measurement_well`.
 
@@ -87,7 +69,7 @@ stock_od = measured_od * 2   # back-calculate from 1:2 stock dilution
 
 If the OD cannot be retrieved, stop and report.
 
-### 2. Compute dilution volumes
+### 3. Compute dilution volumes
 
 ```python
 cell_transfer_vol_ul = 10.0
@@ -101,7 +83,7 @@ water_vol_for_dilution = dilution_total_vol_ul - cell_vol_for_dilution
 
 Validate: `cell_vol_for_dilution` must be > 0 and < `dilution_total_vol_ul`. If stock OD is very low (cell_vol > dilution_total_vol), increase `dilution_total_vol_ul` and warn the user.
 
-### 3. Load formulations and build condition list
+### 4. Load formulations and build condition list
 
 ```python
 import json, random
@@ -124,7 +106,7 @@ formulations.append({
 # 13 conditions total
 ```
 
-### 4. Randomize well layout
+### 5. Randomize well layout
 
 ```python
 # Generate all wells in plate_area B2:G11 (row-major order)
@@ -149,11 +131,11 @@ well_condition_map = {
 }
 ```
 
-### 5. Timestamp
+### 6. Timestamp
 
 Run `date +"%Y%m%d_%H%M"` via Bash → `YYYYMMDD_HHMM`.
 
-### 6. Write layout CSV
+### 7. Write layout CSV
 
 Save to `monomer-examples/YYYYMMDD_HHMM_<tag>_<destination_plate>_growth_layout.csv`:
 
@@ -165,7 +147,7 @@ B3,F2,Baybe-DMin-...,Defined-Minimal Media,1,139.3,10,0.01
 
 Columns: `well`, `condition_id`, `condition_name`, `base_medium`, `replicate`, `base_medium_vol_ul`, `cell_transfer_vol_ul`, `target_od`.
 
-### 7. Write workflow Python file
+### 8. Write workflow Python file
 
 Save to `monomer-examples/YYYYMMDD_HHMM_<tag>_<destination_plate>_growth.py`.
 
@@ -252,17 +234,17 @@ workflow.add_time_constraint(MoreThanConstraint(
 
 > **Note:** Blocks 1 and 2 of the transfer array use `dst_plate: "cell_culture_stock"`. Confirm with the Monomer team that `Hackathon Transfer Samples` supports writing to the cell_culture_stock plate as destination before submitting. If not, use a spare well on the experiment plate (e.g., `A1`) as the dilution well and set `dst_plate: "experiment"`.
 
-### 8. Upload → Validate → Register
+### 9. Upload → Validate → Register
 
 - `create_workflow_definition_file` with file name `<destination_plate>_growth.py`
 - `validate_workflow_definition_file`
 - `register_workflow_definition` with name `"<destination_plate> Growth Round <N>"`
 
-### 9. Check plate availability
+### 10. Check plate availability
 
 `check_plate_availability` for `destination_plate`. Stop and report if not available.
 
-### 10. Instantiate
+### 11. Instantiate
 
 ```python
 instantiate_workflow(
@@ -282,11 +264,11 @@ instantiate_workflow(
 )
 ```
 
-### 11. Report
+### 12. Report
 
 Show the user:
 - Local Python file path
 - Local CSV file path (print first 5 rows)
 - Workflow instance UUID and status
 - Dilution summary: `stock_od → diluted_od`, cell vol / water vol in A4
-- Any warnings (e.g., missing reagent name in REAGENT_PLATE_WELLS)
+- Any warnings (e.g., reagents in formulation files not found in live plate well map)
