@@ -35,7 +35,7 @@ Ask for any missing values:
 - Dilution well pre-mix: `3 × 175 µL` in source well, post-mix `3 × 150 µL` in dilution well
 - Cell inoculation pre-mix: `3 × 50 µL` in dilution well before each aspirate, post-mix `3 × 50 µL` in destination well
 - No intermediate mixing during media distribution
-- `new_tip: always` on all transfers
+- `new_tip` strategy: `"always"` on first transfer per base-medium source well, `"never"` on subsequent replicates of same source; `"always"` on all stock component and cell transfers
 - `blow_out: True` on all reagent/media transfers; `blow_out: False` on all cell transfers
 
 ## Steps
@@ -187,8 +187,35 @@ Build in this order — **never deviate**:
  "post_mix_volume": 150, "post_mix_reps": 3},
 ```
 
-**Block 2 — Base media distribution (grouped by source well, no mix):**
-For each unique base medium across all 39 wells, emit one transfer entry per destination well (same source → multiple destinations in order). `blow_out: True`, no mix keys.
+**Block 2 — Base media distribution (grouped by source well, tip reuse within group):**
+
+Sort all base media transfers so that all wells receiving the same base medium are consecutive. Within each base medium group:
+- First well: `new_tip: "always"` (fresh tip when switching to a new source well)
+- All remaining wells of the same base medium: `new_tip: "never"` (reuse tip)
+
+`blow_out: True` on all entries, no mix keys.
+
+```python
+# Group destination wells by base medium source well
+from collections import defaultdict
+base_media_groups = defaultdict(list)  # src_well → [(dst_well, volume), ...]
+for well, entry in well_condition_map.items():
+    cond = entry["condition"]
+    src_well = REAGENT_PLATE_WELLS[cond["base_medium"]]
+    base_media_groups[src_well].append((well, cond["base_medium_volume_uL"]))
+
+for src_well, dst_list in base_media_groups.items():
+    for i, (dst_well, vol) in enumerate(dst_list):
+        transfer_array.append({
+            "src_plate": "reagent",
+            "src_well": src_well,
+            "dst_plate": "experiment",
+            "dst_well": dst_well,
+            "volume": vol,
+            "new_tip": "always" if i == 0 else "never",
+            "blow_out": True,
+        })
+```
 
 **Block 3 — Stock component distribution (grouped by source well, no mix):**
 For each unique stock component, emit one transfer entry per destination well that requires it. Same structure as Block 2.
