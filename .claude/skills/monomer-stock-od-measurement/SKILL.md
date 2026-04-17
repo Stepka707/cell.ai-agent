@@ -1,6 +1,6 @@
 ---
 name: monomer-stock-od-measurement
-description: Prepares and submits a stock dilution OD600 measurement workflow on the Monomer workcell. Transfers 100 µL sterile H₂O (CellAi_Reagent_Stocks_001 D1) then 100 µL cells (VNAT_STOCK_002) into a destination well on an experiment plate, followed by OD600 measurement. Writes a timestamped local Python file and submits to Monomer.
+description: Prepares and submits a stock dilution OD600 measurement workflow on the Monomer workcell. Transfers 100 µL sterile H₂O (CellAI Reagent Plate D1) then 100 µL cells (VNAT_STOCK_002) into a destination well on an experiment plate, followed by OD600 measurement. Writes a timestamped local Python file and submits to Monomer.
 ---
 
 The user wants to run a stock dilution OD600 measurement on the Monomer workcell.
@@ -18,7 +18,7 @@ Ask the user for any missing values:
 ## Fixed parameters — never ask, never change
 
 - Cell stock plate: `VNAT_STOCK_002`
-- Reagent plate name: `CellAi_Reagent_Stocks_001`
+- Reagent plate: the checked-in plate whose `initial_media_type` tag contains `"CellAI Reagent Plate"` — **resolve live from Monomer, do not hardcode the barcode**
 - Water source well: `D1`
 - Water: 100 µL · `new_tip: always` · `blow_out: True` · no mix
 - Cells: 100 µL · `new_tip: always` · `blow_out: False`
@@ -29,9 +29,19 @@ Ask the user for any missing values:
 
 ## Steps
 
-1. **Timestamp** — run `date +"%Y%m%d_%H%M"` via Bash to get `YYYYMMDD_HHMM`
+1. **Verify plates are available** — before writing any files, check all three required plates:
 
-2. **Write local file** — save to:
+   a. **Reagent plate** — call `list_reagent_plates(is_checked_in=True)` and find a plate whose `initial_media_type` matches `"CellAI Reagent Plate"`. Extract the resolved `reagent_name` (= `initial_media_type`) and confirm well `D1` contains sterile H₂O. Stop and report if not found or D1 is empty.
+
+   b. **Cell stock plate** — call `check_plate_availability` for `VNAT_STOCK_002`. Stop and report if not checked in or not available.
+
+   c. **Destination plate** — call `check_plate_availability` for `destination_plate`. Stop and report if not available.
+
+   Only proceed once all three checks pass. Show the user the resolved reagent plate barcode and tag.
+
+2. **Timestamp** — run `date +"%Y%m%d_%H%M"` via Bash to get `YYYYMMDD_HHMM`
+
+3. **Write local file** — save to:
    `monomer-examples/YYYYMMDD_HHMM_SCRATCH_<destination_plate>_stock_od600.py`
 
    The `build_definition` function signature must be:
@@ -39,7 +49,7 @@ Ask the user for any missing values:
    def build_definition(
        plate_barcode: str = "<destination_plate>",
        cell_stock_barcode: str = "VNAT_STOCK_002",
-       reagent_name: str = "CellAi_Reagent_Stocks_001",
+       reagent_name: str = "CellAI Reagent Plate",
        cell_src_well: str = "<cell_src_well>",
        water_src_well: str = "D1",
        dst_well: str = "<dst_well>",
@@ -78,16 +88,14 @@ Ask the user for any missing values:
    ]
    ```
 
-3. **Upload** — `create_workflow_definition_file` with file name `<destination_plate>_stock_od600.py`
+4. **Upload** — `create_workflow_definition_file` with file name `<destination_plate>_stock_od600.py`
 
-4. **Validate** — `validate_workflow_definition_file` with test inputs
+5. **Validate** — `validate_workflow_definition_file`
 
-5. **Register** — `register_workflow_definition` with name `"<destination_plate> Stock OD600"`
-
-6. **Check availability** — `check_plate_availability` for `destination_plate`; stop and report if not available
+6. **Register** — `register_workflow_definition` with name `"<destination_plate> Stock OD600"`
 
 7. **Instantiate** — `instantiate_workflow` with:
-   - All inputs matching `build_definition` parameters
-   - `reason`: `"Stock dilution OD600: 100 µL H2O (CellAi_Reagent_Stocks_001 D1) + 100 µL cells (VNAT_STOCK_002 <cell_src_well>) → <destination_plate> <dst_well>"`
+   - All inputs matching `build_definition` parameters, using the resolved `reagent_name` from step 1
+   - `reason`: `"Stock dilution OD600: 100 µL H2O (<reagent_name> D1) + 100 µL cells (VNAT_STOCK_002 <cell_src_well>) → <destination_plate> <dst_well>"`
 
 8. **Report** — show the user: local file path, workflow instance UUID, status

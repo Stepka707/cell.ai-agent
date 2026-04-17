@@ -25,7 +25,7 @@ Ask for any missing values:
 ## Fixed parameters — never ask, never change
 
 - Cell stock plate: `VNAT_STOCK_002`
-- Reagent plate: `CellAi_Reagent_Stocks_001`
+- Reagent plate: resolved live from Monomer — the checked-in plate whose `initial_media_type` is `"CellAI Reagent Plate"`
 - Cell transfer volume: `10 µL` per experiment well
 - Total well volume: `200 µL` (media fills the remaining 190 µL)
 - Control media: `"Novel Bio NBxCyclone Media"` (base medium only, no stock components)
@@ -40,9 +40,15 @@ Ask for any missing values:
 
 ## Steps
 
-### 1. Read reagent plate well map from Monomer
+### 1. Verify plates and read reagent well map from Monomer
 
-Call `mcp__monomer-cloud__get_plate_details` for `CellAi_Reagent_Stocks_001` to retrieve the current well contents. Build `REAGENT_PLATE_WELLS` dynamically from the response:
+**a. Reagent plate** — call `list_reagent_plates(is_checked_in=True)` and find the plate whose `initial_media_type` matches `"CellAI Reagent Plate"`. Extract the resolved `reagent_name` (= `initial_media_type`) and the plate's `reagents_by_well`. Stop and report if not found.
+
+**b. Cell stock plate** — call `check_plate_availability` for `VNAT_STOCK_002`. Stop and report if not available.
+
+**c. Destination plate** — call `check_plate_availability` for `destination_plate`. Stop and report if not available.
+
+Build `REAGENT_PLATE_WELLS` dynamically from the reagent plate's `reagents_by_well` response:
 
 ```python
 # From the plate details, extract reagents_by_well:
@@ -157,7 +163,7 @@ The `build_definition` signature:
 def build_definition(
     plate_barcode: str = "<destination_plate>",
     cell_stock_barcode: str = "VNAT_STOCK_002",
-    reagent_name: str = "CellAi_Reagent_Stocks_001",
+    reagent_name: str = "CellAI Reagent Plate",
     cell_src_well: str = "<cell_src_well>",
     dilution_well: str = "<dilution_well>",
     water_vol_ul: float = <water_vol_for_dilution>,

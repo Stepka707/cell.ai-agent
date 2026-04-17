@@ -1,0 +1,206 @@
+[
+  {
+    "condition_id": "E-F1-R1",
+    "name": "Elnora-NBx-Fe-Glutamate",
+    "base_medium": "Media 1",
+    "base_medium_volume_uL": 150.0,
+    "total_volume_uL": 190.0,
+    "predicted_growth_rate_per_hr": 2.85,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 7.6,
+        "final_concentration": "40 mM"
+      },
+      {
+        "name": "Iron(II) Sulfate Heptahydrate",
+        "stock_concentration": "1 mM",
+        "volume_uL": 9.5,
+        "final_concentration": "0.05 mM"
+      },
+      {
+        "name": "Sodium L-Glutamate",
+        "stock_concentration": "1 M",
+        "volume_uL": 5.7,
+        "final_concentration": "30 mM"
+      },
+      {
+        "name": "Water",
+        "stock_concentration": "N/A",
+        "volume_uL": 17.2,
+        "final_concentration": "N/A"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F2-R1",
+    "name": "Elnora-LBv2-Ca-Rich",
+    "base_medium": "Media 2",
+    "base_medium_volume_uL": 150.0,
+    "total_volume_uL": 190.0,
+    "predicted_growth_rate_per_hr": 2.4,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 9.5,
+        "final_concentration": "50 mM"
+      },
+      {
+        "name": "CaCl2",
+        "stock_concentration": "100 mM",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      },
+      {
+        "name": "Water",
+        "stock_concentration": "N/A",
+        "volume_uL": 11.5,
+        "final_concentration": "N/A"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F3-R1",
+    "name": "Elnora-SemiDef-Boost",
+    "base_medium": "Media 4",
+    "base_medium_volume_uL": 150.0,
+    "total_volume_uL": 190.0,
+    "predicted_growth_rate_per_hr": 1.75,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 5.7,
+        "final_concentration": "30 mM"
+      },
+      {
+        "name": "Tryptone",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      },
+      {
+        "name": "Water",
+        "stock_concentration": "N/A",
+        "volume_uL": 15.3,
+        "final_concentration": "N/A"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F4-R1",
+    "name": "Elnora-LBv2-High-Osm",
+    "base_medium": "Media 2",
+    "base_medium_volume_uL": 140.0,
+    "total_volume_uL": 190.0,
+    "predicted_growth_rate_per_hr": 2.5,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 9.5,
+        "final_concentration": "50 mM"
+      },
+      {
+        "name": "KCl",
+        "stock_concentration": "200 mM",
+        "volume_uL": 19.0,
+        "final_concentration": "20 mM"
+      },
+      {
+        "name": "Glycerol",
+        "stock_concentration": "10% in sterile H₂O",
+        "volume_uL": 9.5,
+        "final_concentration": "0.5%"
+      },
+      {
+        "name": "Water",
+        "stock_concentration": "N/A",
+        "volume_uL": 12.0,
+        "final_concentration": "N/A"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F5-R1",
+    "name": "Elnora-NBx-Citrate",
+    "base_medium": "Media 1",
+    "base_medium_volume_uL": 140.0,
+    "total_volume_uL": 190.0,
+    "predicted_growth_rate_per_hr": 2.8,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 7.6,
+        "final_concentration": "40 mM"
+      },
+      {
+        "name": "Sodium Citrate",
+        "stock_concentration": "100 mM",
+        "volume_uL": 19.0,
+        "final_concentration": "10 mM"
+      },
+      {
+        "name": "Glucose",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      },
+      {
+        "name": "Water",
+        "stock_concentration": "N/A",
+        "volume_uL": 13.9,
+        "final_concentration": "N/A"
+      }
+    ]
+  },
+  {
+    "condition_id": "E-F6-R1",
+    "name": "Elnora-LBv2-Ammonium",
+    "base_medium": "Media 2",
+    "base_medium_volume_uL": 150.0,
+    "total_volume_uL": 190.0,
+    "predicted_growth_rate_per_hr": 2.65,
+    "components": [
+      {
+        "name": "MOPS pH 7",
+        "stock_concentration": "1 M",
+        "volume_uL": 7.6,
+        "final_concentration": "40 mM"
+      },
+      {
+        "name": "(NH₄)₂SO₄",
+        "stock_concentration": "1 M",
+        "volume_uL": 5.7,
+        "final_concentration": "30 mM"
+      },
+      {
+        "name": "Yeast Extract",
+        "stock_concentration": "100 mg/mL",
+        "volume_uL": 9.5,
+        "final_concentration": "5 mg/mL"
+      },
+      {
+        "name": "Water",
+        "stock_concentration": "N/A",
+        "volume_uL": 17.2,
+        "final_concentration": "N/A"
+      }
+    ]
+  }
+]

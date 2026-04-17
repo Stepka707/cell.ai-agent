@@ -103,6 +103,8 @@ Each formulation must be unique — no two formulations may use the same base me
 All formulations must respect the operational constraints defined above. However, if you have strong literature-backed reasons to believe a specific precipitation, osmolarity, or pH constraint is overly conservative for V. natriegens — explain your reasoning explicitly and you may exceed it. Hard limits on pipetting volumes and total well volume (190 µL) are never negotiable.
 Your reasoning and literature citations will be logged and compared against a parallel Bayesian optimizer post-hoc.
 
+Do not apply Bayesian or systematic optimization logic. Your role is purely literature-driven — cite specific V. natriegens studies and use them to justify every formulation choice. The Bayesian optimizer is a separate post-hoc benchmark.
+
 {PREVIOUS_RESULTS_SECTION}
 
 **Output two files:**

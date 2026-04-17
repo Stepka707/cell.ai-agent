@@ -1,0 +1,126 @@
+"""CellAI experiment: transfer water + cells into experiment plate, then read OD600.
+
+OVERVIEW
+--------
+1. Transfer 100 µL sterile H₂O from CellAi_Reagent_Stocks_001 well D1 into
+   CellAI_Experiment_001 well B2.
+2. Transfer 100 µL cells from VNAT_STOCK_002 well A2 (with pre-mix) into
+   CellAI_Experiment_001 well B2.
+3. Transport CellAI_Experiment_001 to the reader and take an OD600 measurement.
+
+PLATE REQUIREMENTS
+------------------
+- CellAI_Experiment_001       : 96-well experiment plate (STX220) — must be checked in
+- VNAT_STOCK_002               : 24-well cell culture stock plate (STX220) — checked in, A2
+- CellAi_Reagent_Stocks_001   : 24-well reagent plate (LPX220) — pending operator fulfillment
+                                  reagent_name tag must be confirmed with operator after fulfillment
+"""
+
+from __future__ import annotations
+
+from src.platform.core_domain.units import Time
+from src.workflows.workflow_definition_dsl.workflow_definition_descriptor import (
+    MoreThanConstraint,
+    RoutineReference,
+    WorkflowDefinitionDescriptor,
+)
+
+
+def build_definition(
+    plate_barcode: str = "CellAI_Experiment_001",
+    cell_stock_barcode: str = "VNAT_STOCK_002",
+    reagent_name: str = "CellAi_Reagent_Stocks_001",
+    cell_src_well: str = "A2",
+    water_src_well: str = "D1",
+    dst_well: str = "B2",
+    cell_volume_ul: float = 100.0,
+    water_volume_ul: float = 100.0,
+) -> WorkflowDefinitionDescriptor:
+    """Transfer water then cells into experiment plate, then measure OD600.
+
+    :param plate_barcode: Barcode of the 96-well experiment plate (STX220).
+    :param cell_stock_barcode: Barcode of the 24-well cell culture stock plate (STX220).
+    :param reagent_name: Tag for the LPX220 reagent plate (CellAi_Reagent_Stocks_001).
+        Must match the tag assigned by the operator upon fulfillment.
+    :param cell_src_well: Source well for cells on the stock plate (default A2).
+    :param water_src_well: Source well for sterile H₂O on the reagent plate (default D1).
+    :param dst_well: Destination well on the experiment plate (default B2).
+    :param cell_volume_ul: Volume of cells to transfer in µL (default 100).
+    :param water_volume_ul: Volume of water to transfer in µL (default 100).
+    :return: Complete workflow definition.
+    """
+    workflow = WorkflowDefinitionDescriptor(
+        description=(
+            f"Transfer {water_volume_ul} µL H₂O + {cell_volume_ul} µL cells "
+            f"into {plate_barcode} {dst_well}, then read OD600."
+        )
+    )
+
+    # Water first, then cells — standard dilution order.
+    # Pre-mix cells 3× at 75 µL before aspirating to homogenise.
+    # Post-mix after dispensing cells to blend with water already in well.
+    transfer_array = [
+        {
+            "src_plate": "reagent",
+            "src_well": water_src_well,
+            "dst_plate": "experiment",
+            "dst_well": dst_well,
+            "volume": water_volume_ul,
+            "new_tip": "always",
+            "blow_out": True,
+        },
+        {
+            "src_plate": "cell_culture_stock",
+            "src_well": cell_src_well,
+            "dst_plate": "experiment",
+            "dst_well": dst_well,
+            "volume": cell_volume_ul,
+            "pre_mix_volume": 75,
+            "pre_mix_reps": 3,
+            "new_tip": "always",
+            "blow_out": False,
+            "post_mix_volume": 75,
+            "post_mix_reps": 3,
+        },
+    ]
+
+    workflow.add_routine(
+        "transfer",
+        RoutineReference(
+            routine_name="Hackathon Transfer Samples",
+            routine_parameters={
+                "reagent_name": reagent_name,
+                "experiment_plate_barcode": plate_barcode,
+                "cell_culture_stock_plate_barcode": cell_stock_barcode,
+                "transfer_array": transfer_array,
+                "cell_culture_stock_labware": "corning_24_wellplate_3.4ml_flat",
+            },
+        ),
+    )
+
+    workflow.add_routine(
+        "measure_od600",
+        RoutineReference(
+            routine_name="Measure Experiment Plate Absorbance",
+            routine_parameters={
+                "culture_plate_barcode": plate_barcode,
+                "method_name": "96wp_od600",
+                "wells_to_process": [dst_well],
+            },
+        ),
+    )
+
+    workflow.add_time_constraint(
+        MoreThanConstraint(
+            from_start="transfer",
+            to_start="measure_od600",
+            value=Time("1 minute"),
+        )
+    )
+
+    return workflow
+
+
+if __name__ == "__main__":
+    import json
+    print(json.dumps(build_definition().model_dump(), indent=2))
